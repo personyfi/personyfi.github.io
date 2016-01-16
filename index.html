@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Personyfi: Mobile Engagement</title>
+  <meta name="description" content="Personyfi is an application that gives users the ability to tailor personalized text messages to anyone in their address book without the annoyance of group texts.">
+  <meta name="keywords" content="mobile,application,android,texting,app,personyfi">
+  <meta name="author" content="astadum.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel='stylesheet' href='assets/css/bootstrap.min.css'>       <!-- bootstrap -->
+  <link rel='stylesheet' href='assets/css/vendor.css'>              <!-- plugin -->
+  <link rel='stylesheet' href='assets/css/theme_dark_pink2.css'>   <!-- main style -->
+  <link rel='stylesheet' href='assets/css/custom.css'>              <!-- custom style -->
+  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <!--[if lte IE 9]><!-->
+  <script src='assets/js/vendor/html5shiv.min.js'></script>
+  <!--<![endif]-->
+</head>
+
+<!-- to edit the animation, please read documentation <animation> section -->
+
+<body>
+
+  <!-- site loader -->
+  <div class="site-loader">
+    <span></span>
+    <p>PERSONYFI</p> <!-- site loader text -->
+  </div>
+  <!-- site loader -->
+
+  <!-- site bg -->
+  <div class="site-bg">
+    <div class="site-bg__img"></div>
+    <div class="site-bg__video"></div>
+    <div class="site-bg__overlay"></div>
+    <div class="site-bg__effect"></div>
+    <canvas class="site-bg__canvas"></canvas>
+  </div>
+  <!-- /site bg -->
+
+  <!-- site nav -->
+  <nav class="site-nav">
+    <div class="site-nav__table">
+      <div class="site-nav__cell">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="site-nav__inner">
+                <!-- menu -->
+                <ul class="site-nav__menu">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- /menu -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+  <!-- /site nav -->
+
+  <!-- site wrap -->
+  <div class="site-wrap">
+    <!-- site header -->
+    <header class="site-header">
+      <div class="container">
+        <!-- site header logo -->
+        <div class="site-header__logo">
+          <a href="#">
+            <img src="assets/img/site-header-logo.png" alt="logo">
+          </a>
+        </div>
+        <!-- site header logo -->
+
+        <!-- site header icon -->
+        <ul class="site-header__icon">
+          <!-- audio icon -->
+          <li class="site-header__icon__audio">
+            <a href="#">
+              <i class="audio-bar">
+                <span class="audio-bar__item"></span>
+                <span class="audio-bar__item"></span>
+                <span class="audio-bar__item"></span>
+                <span class="audio-bar__item"></span>
+              </i>
+            </a>
+          </li>
+          <!-- /audio icon -->
+
+          <!-- menu icon -->
+          <li class="site-header__icon__nav">
+            <a href="#">
+              <i class="ion-android-menu"></i>
+            </a>
+          </li>
+          <!-- /menu icon -->
+        </ul>
+        <!-- /site header icon -->
+      </div>
+    </header>
+    <!-- /site header -->
+
+    <!-- site main -->
+    <main class="site-main">
+      <!-- home -->
+      <div id="home" class="section is-active">
+        <div class="section__table">
+          <div class="section__cell">
+            <div class="container-fluid max-width">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInUp2"
+                    data-animation-in-delay="300"
+                    data-animation-out="fadeOutDown2"
+                    data-animation-out-delay="700">
+                      <h1 class="section__title">
+                        Person<span class="color">yfi</span>
+                      </h1>
+                      <p class="section__caption">Where mail merge meets mobile</p>
+                    </div>
+                  </div>
+              
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInUp2"
+                    data-animation-in-delay="1100"
+                    data-animation-out="fadeOutDown2"
+                    data-animation-out-delay="100">
+                      <div class="btn-wrap">
+                       <!--  <a class="btn btn-theme _icon _circle" href="#newsletter">
+                          <i class="ion-android-mail"></i>
+                          Newsletter
+                        </a> -->
+                        <a class="btn btn-theme _icon _circle" href="#about" data-link="section"> <!-- link to section, edit the [href] and add [data-link="section"] -->
+                          <i class="ion-information-circled"></i>
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /home -->
+
+      <!-- about -->
+      <div id="about" class="section">
+        <div class="section__table">
+          <div class="section__cell">
+            <div class="container">
+              <!-- section heading -->
+              <div class="section__heading row">
+                <div class="col-xs-12 col-md-5">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInUp2"
+                    data-animation-in-delay="300"
+                    data-animation-out="fadeOutDown2"
+                    data-animation-out-delay="600">
+                      <h2 class="section__title">
+                       About <span class="color">us</span>
+                      </h2>
+                      <div class="hr"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-md-offset-1">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                      data-animation-in="fadeInUp2"
+                      data-animation-in-delay="300"
+                      data-animation-out="fadeOutDown2"
+                      data-animation-out-delay="400">
+                      <p class="section__caption">
+                        Personyfi is an Android application that gives users the ability to tailor personalized text messages to anyone in their address book without the annoyance of group texts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /section heading -->
+
+              <!-- section content -->
+              <div class="section__content row">
+                <div class="col-xs-12 col-md-5">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                      data-animation-in="fadeInLeft"
+                      data-animation-in-delay="900"
+                      data-animation-out="fadeOutLeft"
+                      data-animation-out-delay="100">
+                      <div class="about__item">
+                        <i class="ion-android-warning"></i>
+                        <h3>The problem</h3>
+                        <p>Here come the holiday texts... People hate generic texts... There must be an easier way.</p>
+                      </div>
+                      <div class="about__item">
+                        <i class="ion-android-bulb"></i>
+                        <h3>The solution</h3>
+                        <p>A mobile application that offers a seamless, simple, and slick interface to deliver a plethora of personalized text messages.</p>
+                      </div>
+                      <div class="about__item">
+                        <i class="ion-person-stalker"></i>
+                        <h3>Founders</h3>
+                        <p>Lucas and Anders met in UO's computer science department and have been building mobile applications since 2015.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-md-offset-1">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                      data-animation-in="fadeInRight"
+                      data-animation-in-delay="900"
+                      data-animation-out="fadeOutRight"
+                      data-animation-out-delay="100">
+                      <p>Personyfi stemmed from wasting precious time over the holidays to send out personalized text messages to friends and loved ones. Personyfi fixes this problem through our slick and simple application interface. Keeping Google's Material Design in mind, we wanted to make an application that gave users the easiest platform to deliver their message powerfully. By utilizing asynchonous message passing, Personyfi blows expectations in texting performance. Hope you aren't paying by the text message ;)!</p>
+                      <a class="btn btn-theme _icon _circle" href="#contact" data-link="section">
+                        <i class="ion-android-mail"></i>
+                        Contact us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /section content -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /about -->
+
+      <!-- contact -->
+      <div id="contact" class="section">
+        <div class="section__table">
+          <div class="section__cell">
+            <div class="container">
+              <!-- section heading -->
+              <div class="section__heading row">
+                <div class="col-xs-12 col-sm-5">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                      data-animation-in="fadeInUp2"
+                      data-animation-in-delay="300"
+                      data-animation-out="fadeOutDown2"
+                      data-animation-out-delay="600">
+                      <h2 class="section__title">
+                       Get <span class="color">in</span> touch
+                      </h2>
+                      <div class="hr"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                      data-animation-in="fadeInUp2"
+                      data-animation-in-delay="300"
+                      data-animation-out="fadeOutDown2"
+                      data-animation-out-delay="400">
+                      <p class="section__caption">
+                        The beta release is coming soon and we would love for you to be apart of it. Android only... For now.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /section heading -->
+
+              <!-- section content -->
+              <div class="section__content row">
+                <div class="col-xs-12 col-sm-5 col-md-4">
+                  <!-- contact info -->
+                  <div class="contact-info overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInLeft"
+                    data-animation-in-delay="700"
+                    data-animation-out="fadeOutLeft"
+                    data-animation-out-delay="100">
+                      <div class="contact-info__item">
+                        <i class="ion-paper-airplane"></i>
+                        <h3>Email address</h3>
+                        <p>personyfi@gmail.com</p>
+                      </div>
+                      <div class="contact-info__item">
+                        <i class="ion-map"></i>
+                        <h3>Location</h3>
+                          <p>
+                            Eugene, Oregon
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /contact info -->
+                </div>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-1 col-md-offset-2">
+                  <!-- contact form -->
+                  <div class="overflow-hidden">
+                    <div class="animation-item"
+                    data-animation-in="fadeInRight"
+                    data-animation-in-delay="700"
+                    data-animation-out="fadeOutRight"
+                    data-animation-out-delay="100">
+                      <form class="form-theme" role="form" action="http://formspree.io/personyfi@gmail.com" method="POST" novalidate="novalidate">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="form-group required">
+                              <label class="form-label" for="contactName">Name</label>
+                              <input type="text" class="form-control" id="contactName" type="text" name="name">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-group required">
+                              <label class="form-label" for="contactEmail">Email</label>
+                              <input type="email" class="form-control" id="contactEmail" type="text" name="email">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group required">
+                          <label class="form-label" for="contactMessage">Message</label>
+                          <textarea class="form-control" id="contactMessage" rows="4" name="message"></textarea>
+                        </div>
+                        <input type="submit" name="submit" id="submit" value="Send Message" class="btn btn-theme _circle _icon">
+                        <div class="form-notify"></div>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- contact form -->
+                </div>
+              </div>
+              <!-- /section content -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /portfolio-->
+    </main>
+    <!-- /site main -->
+
+    <!-- site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="site-footer__inner">
+              <!-- copyright -->
+              <p class="site-footer__copyright">
+                2016 @ <a href="#" target="_blank">PERSONYFI</a> | All rights Reserved.
+              </p>
+              <!-- /copyright -->
+              <!-- social -->
+              <!-- <ul class="site-footer__social">
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
+              </ul> -->
+              <!-- /social -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /site footer -->
+  </div>
+  <!-- /site wrap -->
+
+  <!-- script -->
+  <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+  <script src='assets/js/vendor/bootstrap.min.js'></script>
+  <script src='assets/js/vendor/plugin.js'></script>
+  <script src='assets/js/variable.js'></script>
+  <script src='assets/js/main.js'></script>
+  <!-- /script -->
+
+</body>
+</html>
